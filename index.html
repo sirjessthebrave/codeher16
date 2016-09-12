@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Get Sassy</title>
+
+		<meta name="description" content="Introduction to Scalable and Modular Architechture and Intro toSASS">
+		<meta name="author" content="Jessica Bell">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/sky.css" id="theme">
+		<link rel="stylesheet" href="css/style.css">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+				<img src="img/sass.png" class="no-shadow">
+					<h3>Making CSS more fun!</h3>
+					<p>
+						<small>Created by <a href="http://sirjessthebrave.github.io/">Jessica Bell</a> / <a href="http://twitter.com/sirjessthebrave">@SirJessTheBrave</a></small>
+					</p>
+				</section>
+
+				<section>
+					<h2>Agenda</h2>
+					<ul>
+						<li class="no-bullets">About Me</li>
+						<li class="no-bullets">What is SASS</li>
+						<li class="no-bullets">Folder Structure: Global, Components, Base</li>
+						<li class="no-bullets">DEMO: Breaking Down your project</li>
+						<li class="no-bullets">WORK POINT: Getting set up on Cloud 9</li>
+						<li class="no-bullets">SMACCS</li>
+						<li class="no-bullets">WORK POINT: Change something on your starter!</li>
+					</ul>
+				</section>
+
+			<!-- 	About Me       -->
+				<section>
+					<section>
+						<h2>Who am I?</h2>
+						<img src="img/who.gif" class="no-shadow">
+						</a>
+					</section>
+					<section>
+						<h2>I'm Jess!</h2>
+						<img src="img/jes.jpg">
+					</section>
+					<section>
+						<p>Front End Developer @<a href="www.deloittedigital.com">Deloitte Digital</a></p>
+						<p>Organizations: DC Tech Meetup, DCFem Tech, Women Who Code, General Assembly, JavaScript Guild</p>
+						<ul>
+							<li class="no-bullets org-logo"><img src="img/dctm.jpeg" class="no-shadow"></li>
+							<li class="no-bullets org-logo"><img src="img/dcft.png" class="no-shadow"></li>
+							<li class="no-bullets org-logo"><img src="img/whc.png" class="no-shadow"></li>
+							<li class="no-bullets org-logo"><img src="img/ga.png" class="no-shadow"></li>
+							<li class="no-bullets org-logo"><img src="img/jsguild-logo.png" class="no-shadow"></li>
+							<li class="no-bullets org-logo"><img src="img/hmc.png" class="no-shadow"></li>
+						</ul>
+						<p>Connect with me on Twitter <a href="https://twitter.com/SirJesstheBrave">@SirJessTheBrave</a></p>
+					</section>
+				</section><!-- End About Me       -->
+				<!-- What is SMACSS and SASS -->
+				<section>
+					<section>
+						<h2>SOOO What is SASS?</h2>
+						<ul>
+							<img src="img/sass.gif" class="no-shadow">
+						</ul>
+					</section>
+					<section>
+						<h2>SASS</h2>
+						<p>SASS stands for Syntactically Awesome Style Sheets and is a CSS pre-processor that allows you to use programmatic functionality and better organize your CSS.</p>
+						<p>Read all the SASS documentation at <a href="http://sass-lang.com/">sass-lang.com/</a></p>
+						<img src="img/sass.png" class="no-shadow">
+						<aside class="notes">
+							<p>initially designed by Hampton Catlin and developed by Natalie Weizenbaum.  Sass is a scripting language that is interpreted into CSS. There are 2 syntaxes; .sass and .scss THIS IS NOT A FRAMEWORK ONLY A DEVELOPER TOOL</p>
+						</aside>
+					</section>
+
+					<section>
+						<p>SASS takes your .SCSS files, and compiles them into a normal CSS style sheet to be included in your project. </p>
+					</section>
+
+					<section>
+						<p>SASS is organized into folders with smaller .scss files called partials.  The meat of your SASS files will be your Components partials.  The functionality of SASS comes from the Base partials.</p>
+					</section>
+
+					<section>
+						<h2>Time to get Sassy!</h2>
+						<img src="img/sassy.gif" class="no-shadow">
+					</section>
+				</section><!-- END What is SMACSS and SASS -->
+
+				<!-- SASS -->
+				<section>
+					<section>
+						<h2>The SASS Folder Structure</h2>
+						<ul>
+							<li class="fragment">Global: <span class="fragment"> Your global layout including typography, base form styles, and html elements</span></li>
+							<li class="fragment">Components: <span class="fragment">Your modules, states, and section layouts</span></li>
+							<li class="fragment">Base: <span class="fragment">Your Variables, Mixins, Extendables, and Vendor style sheets (normalize, formalize, reset ect bold</span></li>
+						</ul>
+						<aside class="notes">
+							at this point, pull up project and show them folder structure in a project
+						</aside>
+					</section>
+					<section>
+						<h2>How SASS works</h2>
+						<ul>
+							<li>Partials</li>
+							<li>Variables, Mixins, Extendables</li>
+							<li>Compiling</li>
+							<li>Import partial</li>
+							<li>Output Style sheet</li>
+						</ul>
+						<h3 style="margin-top:2em;">Demo: How Sass Compiles</h3>
+					</section>
+
+					<section  data-markdown>]
+						<script type="text/template">
+						## SCSS => CSS
+
+						```
+						<section data-markdown>
+						  ## SASS
+
+						  .article-wrapper {
+						  	background-color: #ffffff;
+
+						  	.article-text {
+						  	  color: #333;
+						  	  &.article-link {
+						  	  	color: #000;
+						  	  }
+						  	 }
+						  	}
+
+						  ## CSS
+
+						  .article-wrapper {
+						  	background-color: #ffffff;
+						  }
+						  .article-wrapper .article-text {
+						  	color: #333;
+						  }
+						  .article-wrapper a.article-text {
+						  	color: #000;
+						  }
+						</section>
+						```
+						</script>
+					</section>
+
+					<section>
+						<h2>Global: styles to be applied globally</h2>
+						<ul>
+							<li>Global Layout</li>
+							<li>Typography</li>
+							<li>Forms</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Components: site specific reusable bits</h2>
+						<p>Modular sections of you page.  Repeatable bits of code.  For example: Header/Footer,  side-bar, display for blog articles, hero images, ect.</p>
+					</section>
+
+					<section>
+						<h2>Base: the functionality of SASS</h2>
+						<ul>
+							<li>Variables</li>
+							<li>Extendables</li>
+							<li>Mixins</li>
+							<li>Vendor</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Breaking down a site</h2>
+						<img src="img/kitten-site-demo.png" class="no-shadow">
+					</section>
+
+					<section>
+						<h2>Work Point</h2>
+						<p>Sass requires an installation process as well a compiler such as gulp or grunt to run.  To save time we will be using Cloud 9 to spin up an environment with all the dependencies we will need.</p>
+					</section>
+					<section>
+						<ul>
+							<li>
+								Head to <a href="https://c9.io">c9.io</a> and sign up for a free account
+							</li>
+							<li>Fork and clone the <a href="https://github.com/sirjessthebrave/minimal-site">'Minimal Site'</a> repo from my Git Hub account</li>
+							<li>Open up the project in your Cloud9 account and make a change to the SASS files</li>
+							<li>Run the following command in your terminal: sass sass/style.scss stylesheets/style.css</li>
+							<li>Celebrate!</li>
+							<img src="http://i.imgur.com/Cp62j1q.gif" style="margin: 0 auto; display: block;">
+						</ul>
+					</section>
+				</section><!-- END SASS -->
+
+				<!-- 	SMACSS      -->
+				<section>
+					<section>
+						<h2>SMACSS</h2>
+						<p>SMACSS stands for Scalable and Modular Architecture for CSS and is a way of organizing one's css is a more reusable and sectioned out way.  It is NOT a library or framework, but a way of styling and organizing your css. It was written by Jonathan Snook and is freely available on-line.</p>
+						<p>Get the free SMACS Online book at <a href="https://smacss.com">SMACSS.com</a></p>
+						<img src="img/smacs.png" class="no-shadow">
+					</section>
+
+					<section >
+						<h2>Categories of SMACSS</h2>
+						<div class="left-align-text">
+							<p>
+								<span class="fragment bold">Base: </span>
+								<span class="fragment">The most basic layout of your page/site</span>
+							</p>
+
+							<p>
+								<span class="fragment bold">Layout: </span>
+								<span class="fragment">Holding one or more 'modular' sections together</span>
+							</p>
+
+							<p>
+								<span class="fragment bold">Module: </span>
+								<span class="fragment">Reusable chunks of code</span>
+							</p>
+
+							<p>
+								<span class="fragment bold">State: </span>
+								<span class="fragment">The look of a particular module while in a certain state such as hover, active, expanded, on mobile</span>
+							</p>
+							<p>
+								<span class="fragment bold">Theme: </span>
+								<span class="fragment">Often not required, but describe how the modules or layouts might look</span>
+							</p>
+						</div>
+					</section>
+
+					<section data-markdown>
+					<h2>Naming Conventions</h2>
+					<p>Naming conventions are very important to writing clean, well understood code.  This is only a sample of how you COULD do naming conventions - the key is to define and stick with a convention</p>
+					<script type="text/template">
+						## Example Naming Conventions
+
+						```
+						<section data-markdown>
+						  ## classes
+						  /* Article Module*/
+						  .article {  }
+
+						  /* Article Module with State */
+						  .article.on-hover{ }
+
+						   ## variables
+						  /*  Colors  */
+						  $c-black: #000000;
+
+						  /*  Base Font Size  */
+						  $base-font-size: 16;
+
+						  /*  Breakpoints  */
+						  $bp-tiny: px-to-em(500);
+
+						   ## Extendables
+						   /*  Clearfix  */
+						   %clearfix { }
+
+						   /*  Fonts  */
+						   %sans-serif { }
+
+						   /*  Icon  */
+						   %facebook { }
+						</section>
+						```
+					</script>
+				</section>
+
+					<section>
+						<h2>Why SMACSS and SASS?</h2>
+						<p>SASS has a folder structure that is parsed out into categories and smaller functional components, which works really well with SMACSS theory.  It also is necessary to have good naming conventions in your variables, mixins, and extendibles for clean, clear, readable SASS</p>
+
+						<aside class="notes">
+							pause for questions
+						</aside>
+					</section>
+				</section><!-- 	SMACSS       -->
+
+				<!-- RESOURCES -->
+				<section>
+					<section>
+						<h1>Thank you!</h1>
+						<img src="http://vignette2.wikia.nocookie.net/im-pusheen-the-cat/images/a/a6/Thank_you.gif/revision/latest?cb=20130825170043">
+					</section>
+					<section>
+						<p>Contact Me:</p>
+						<ul>
+							<li>Twitter: <a href="https://twitter.com/SirJesstheBrave">@SirJessTheBrave</a></li>
+							<li>GitHub: <a href="https://github.com/sirjessthebrave">SirJessTheBrave</a></li>
+						</ul>
+						<p>Resources: </p>
+						<ul>
+							<li><a href="https://smacss.com/">SMACS Documentation </a></li>
+							<li><a href="http://sass-lang.com/">SASS Documentation </a></li>
+							<li><a href="http://sass-lang.com/install">Installing SASS</a></li>
+							<li><a href="https://www.npmjs.com/package/gulp">Gulp Documentation</a></li>
+							<li><a href="http://sassydc.github.io/">DC SASS Meetup</a></li>
+							<li><a href="https://scotch.io/tutorials/getting-started-with-sass">Getting Started Tutorial</a></li>
+							<li><a href="https://www.codeschool.com/courses/assembling-sass">Code School Tutorial</a></li>
+							<li><a href="https://github.com/sirjessthebrave/minimal-site">Minimal Site Starter</a></li>
+							<li><a href="https://github.com/sirjessthebrave/intro-to-sass">These slides!</a></li>
+						</ul>
+					</section>
+				</section><!-- END RESOURCES -->
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
